@@ -1,0 +1,91 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 16px;
+}
+.google-header{
+  background: #F1F1F1;
+  height: 4em;
+  line-height: 4em;
+}
+
+.google-header > *{
+	display: inline-block;
+  vertical-align: middle;
+}
+
+.google-logo{
+  height: 2em;
+  margin-left: 2em;
+  margin-top: -5px;
+}
+
+.google-logo img{
+  height: 2em;
+}
+
+.search-wrapper{
+  width: 400px;
+  margin-left: 2em;
+  position: relative;
+}
+
+input[type="search"]{
+  -webkit-appearance: textfield;
+  height: 2em;
+  width: 400px;
+  box-sizing: border-box;
+  padding-left: .5em;
+  padding-right: 2em;
+  border: 1px solid lightgray;
+  color: #222222;
+  font-family: Arial;
+}
+
+input[type="search"]:focus{
+  border: 1px solid #4683EA;
+  outline: none;
+}
+
+.submit{
+  position: absolute;
+  right: -4em;
+  height: 2em;
+  top: 1em;
+  background: #4683EA;
+  width: 4em;
+  margin-top: 1px;
+  text-align: center;
+  line-height: 2em;
+  display: inline-block;
+  border-radius: 0 3px 3px 0;
+  color: #fff;
+}
+
+input[type="submit"]{
+	border: none;
+  background: transparent;
+  z-index: 1;
+}
+
+input[type="submit"]:hover + .submit{
+  background: #3777dd;
+}
+
+
+.fa-microphone{
+  position: absolute;
+  right: .4em;
+  top: .9em;
+  font-size: 1.5em;
+  color: rgba(0,0,0,0.7);
+  cursor: pointer;
+}
+
+.fa-microphone:hover{
+  color: rgba(0,0,0,.9);
+}
